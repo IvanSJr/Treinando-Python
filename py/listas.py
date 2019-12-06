@@ -33,6 +33,7 @@ sort (decrescente)
 sort(reverse = True) (crescente)
 reverse (inverte a lista)
 '''
+'''
 idade = []
 idade.append(550)
 print(idade)
@@ -54,14 +55,48 @@ idade3.sort(reverse= True) #organiza a lista de forma decrescente
 print(idade3, f"Lista decrescente")
 idade3.reverse() #inverte a lista, o que ta na ultima vai para a primeira o que ta na primeira vai para ultima 
 print(idade3, f"Lista invertida")
-
+'''
 '''
 FUNÇÕES
 max
 min
 sum
 '''
+'''
 idade4 = [1,2,3,4,5]
 print(max(idade4)) #valor maximo
 print(min(idade4)) #valor minimo
 print(sum(idade4)) #soma de todos os valores
+'''
+#COMO CRIAR LISTAS GRANDES
+
+x = []
+
+for i in range(1,10):
+    x.append(i) #adiciona valores em x de 1 a 1 até o range maximo
+print(x)
+
+#or
+
+x = list(range(1,10))
+print(x)
+
+#REMOVER VALORES DE LISTAS
+
+a = [5,10,15,20,25]
+print(a)
+b = int(input("Digite um valor para ser removido da lista "))
+
+if b in a:
+    a.remove(b)
+    print("O valor do foi removido")
+print(a)
+
+#LISTAS DE LISTAS
+
+banco = [["Ivan", 26], ["João",10],["Victor",16]] # NOME / IDADE
+print(banco)
+print(banco[0][0]) #ira imprimir o primeiro dado da primeira lista dentro da lista
+print(banco[0][1]) #ira imprimir o segundo dado da primeira lista dentro da lista
+print(banco[1][0]) #primeiro dado da segunda lista dentro da lista
+print(banco[2][0]) #primeiro dado da terceira lista dentro da lista
