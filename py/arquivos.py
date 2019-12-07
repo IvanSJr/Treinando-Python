@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
+'''
+w = write
+a = alterate 
+r = read
+'''
 
-w = open("arquivo2.txt", "w") #cria um arquivo (apaga o que tem dentro)
+arquivo = open("criandoArquivos.txt", "w")
 
-w.write("Esse é o meu arquivo, Ivan S de J Júnior") #escreve no arquivo
+arquivo.write("Ola, mundo!")
 
-w.close() #fecha o arquivo
-
-arquivo = open("htmlpy.html")
-texto = arquivo.read()
-print(texto)
+arquivo.close
