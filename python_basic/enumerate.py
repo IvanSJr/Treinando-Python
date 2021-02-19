@@ -46,6 +46,3 @@ print(enumarada[0][1])  # ['Luis', 'Flavio', 'Evellyn']
 print(enumarada[0][1][1])  # Flavio
 """
 
-for v1 in enumerate(lista4):
-    valor
-
