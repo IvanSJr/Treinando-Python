@@ -62,7 +62,7 @@ def func2(*args):
     args = list(args)
     args[0] = 10  # Primeiro valor sempre será 10
     args[1] = 50  # Segundo valor sempre será 50
-    print(f'{len(args) valores}')
+    print(f'{len(args)} valores')
     for i in args:
         print(i)
 
