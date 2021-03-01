@@ -1,14 +1,16 @@
-#def potenciação(a,b):
- #   print(a**b)
 
-#potenciação(5,8)
 
-#def soma (a,b):
-#    print(a)
-#    print(b)
-#    print(f"{a} + {b} é igual a:")
-#    print(a + b)
-#soma(4,9)
+def potenciacao(a,b):
+    print(a**b)
+
+potenciação(5,8)
+
+def soma (a,b):
+    print(a)
+    print(b)
+    print(f"{a} + {b} é igual a:")
+    print(a + b)
+    soma(4,9)
 
 '''
 def soma (a, b):
@@ -44,3 +46,25 @@ def retorno():
     return 10, 50 #primeiro valor para primeira variavel, segundo valor para segunda variavel
 a, b = retorno() # a = 10 b = 50
 print(a,b)
+# Utilizando o *args and **kwargs
+
+def func(*args):
+    # Caso não saiba quantos valores serão utilizados
+    print(args)
+    print(len(args))
+
+
+func(1, 2, 3, 4, 5)
+
+
+def func2(*args):
+    # casting tuple para listas
+    args = list(args)
+    args[0] = 10  # Primeiro valor sempre será 10
+    args[1] = 50  # Segundo valor sempre será 50
+    print(f'{len(args)} valores')
+    for i in args:
+        print(i)
+
+
+func2(1, 2, 4, 5, 6, 7, 8, 9, 15, 20, 23, 5, 1, 23, 4, 2)
