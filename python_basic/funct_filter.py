@@ -89,7 +89,7 @@ altera_chave = filter(filtra_alterando, produtos)
 for produto in altera_chave:
     print(produto)  # [{'nome': 'p3', 'preço': 50.22, 'e_caro': True}, {'nome': 'p5', 'preço': 51.99, 'e_caro':
     # True}, {'nome': 'p6', 'preço': 52.11, 'e_caro': True}]
-verifica_produto_caro = filter(filtra, produtos)
+verifica_produto_caro = filter(filtra, produtos)  # NÂO FUNCIONANDO POR QUE O DADO JÀ FOI CONSUMIDO!
 print(list(verifica_produto_caro))  # [{'nome': 'p3', 'preço': 50.22}, {'nome': 'p5', 'preço': 51.99}...
 
 # Utilziando list comprehension
