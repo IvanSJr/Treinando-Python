@@ -1,16 +1,30 @@
+def master(funct):
+    def slave():
+        funct()
+    return slave
 
 
-def potenciacao(a,b):
-    print(a**b)
+def fala_oi():
+    print('Oi!')
 
-potenciação(5,8)
 
-def soma (a,b):
-    print(a)
-    print(b)
-    print(f"{a} + {b} é igual a:")
-    print(a + b)
-    soma(4,9)
+master(fala_oi)
+
+
+def potenciacao(a1, b2):
+    print(a1 ** b2)
+
+
+potenciacao(5, 8)
+
+
+def soma(a3, b3):
+    print(a3)
+    print(b3)
+    print(f"{a3} + {b3} é igual a:")
+    print(a3 + b3)
+    soma2(4, 9)
+
 
 '''
 def soma (a, b):
@@ -24,28 +38,41 @@ m = multiplicação(5, 5)
 print(m)
 print(s)
 '''
-def soma(x,y): #função de soma
-    print(f"a soma de {x} + {y} é igual a {x+y}")
 
-soma(5,2)
 
-def retornaListamaior(*list):
-    print(max(list)) #soma todos os valores digitados numa lista
+def soma2(x, y):  # função de soma
+    print(f"a soma de {x} + {y} é igual a {x + y}")
 
-retornaListamaior(2,4,6,8,10,12,14,16,18,20,22) #valores adicionados
 
-#RETORNAR ALGUM VALOR
+soma2(5, 2)
+
+
+def retornaListaMaior(*lista):
+    print(max(lista))  # soma todos os valores digitados numa lista
+
+
+retornaListaMaior(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22)  # valores adicionados
+
+
+# RETORNAR ALGUM VALOR
 
 def retorna():
     return 165
-#print(retorna) não impreme,já que guarda o valor
-a = retorna #colocar o valor dentro de uma variavel
+
+
+# print(retorna) não impreme,já que guarda o valor
+a = retorna  # colocar o valor dentro de uma variavel
 print(a)
 
+
 def retorno():
-    return 10, 50 #primeiro valor para primeira variavel, segundo valor para segunda variavel
-a, b = retorno() # a = 10 b = 50
-print(a,b)
+    return 10, 50  # primeiro valor para primeira variavel, segundo valor para segunda variavel
+
+
+a, b = retorno()  # a = 10 b = 50
+print(a, b)
+
+
 # Utilizando o *args and **kwargs
 
 def func(*args):
