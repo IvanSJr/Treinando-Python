@@ -1,3 +1,5 @@
+from random import randint
+
 class Pessoa:
     ano_atual = 2021
     def __init__(self, nome, idade):
@@ -12,7 +14,13 @@ class Pessoa:
         idade = cls.ano_atual - ano_nascimento
         return cls(nome, idade)
 
+    @staticmethod
+    def cria_id():
+        rand = randint(1, 100)
+        return rand
+
 
 p1 = Pessoa.por_ano_nascimento('Ivan', 2001)
 print(p1.nome, p1.idade)
 p1.get_ano_nascimento()
+print(p1.cria_id())
