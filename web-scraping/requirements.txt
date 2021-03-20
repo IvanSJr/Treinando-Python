@@ -1,0 +1,14 @@
+beautifulsoup4==4.9.3
+certifi==2020.12.5
+chardet==4.0.0
+distlib==0.3.1
+filelock==3.0.12
+idna==2.10
+importlib-metadata==3.7.3
+requests==2.25.1
+six==1.15.0
+soupsieve==2.2.1
+typing-extensions==3.7.4.3
+urllib3==1.26.4
+virtualenv==20.4.3
+zipp==3.4.1
