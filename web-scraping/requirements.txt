@@ -9,6 +9,6 @@ requests==2.25.1
 six==1.15.0
 soupsieve==2.2.1
 typing-extensions==3.7.4.3
-urllib3==1.26.4
+urllib3==1.26.5
 virtualenv==20.4.3
 zipp==3.4.1
